@@ -15,24 +15,24 @@ CSF 9.5-18.5
 GM 24.0 – 44.0
 WM 45.0 – 49.0
 
-#### 3. T1 to MNI transformation and mapping (03_P46_longitudinal-linear-coregistration-MP2RAGE.LayoutXML)
+#### 3. T1 to group_space transformation and mapping (03_P46_longitudinal-linear-coregistration-MP2RAGE.LayoutXML)
 
 #### 4. Correct fieldmaps (04_reconstruct_phase_flash_gre_from_mrincoming_folder.sh)
 # fieldmaps needed to be corrected into another range
 
-#### 5. Invert mapping MNI to T1 - CBSTOOLS - (05_P46_longitudinal-linear-coregistration-invert-mapping-to-qT1.LayoutXML)
+#### 5. Invert mapping group_avg to T1 - CBSTOOLS - (05_P46_longitudinal-linear-coregistration-invert-mapping-to-qT1.LayoutXML)
 
 #### 6-10. Motion Correction + Fieldmap unwarping + Median & TSNR calculations – NIPYPE (06_ST_Moco_Fmap_Corr_Test_P46_d0.py) (07_ST...py,08_ST...py,09_ST...py,10_ST...py)
 
 #### 11. Mappings- CBSTOOLS – RS2QT1 + QT12RS - (11_P46_contrast-coregistration-rsfMRI-d0-d6.LayoutXML)
 
-#### 12. Correct segmentations 1- CBSTOOLS - transfer TSNR image into MNI space (to multiply with WM mask) - 12_P46_background_correction_layout.LayoutXML
+#### 12. Correct segmentations 1- CBSTOOLS - transfer TSNR image into group_avg space (to multiply with WM mask) - 12_P46_background_correction_layout.LayoutXML
 
 #### 13. Correct segmentations 2 – FSL – TERMINAL - (brain extract TSNR – threshold TSNR with val 10 – then multiply with WM mask (13_bet_tsnr_mul_script)
 
 #### 14. Make averages  -  CBSTOOLS - (14_P46_longitudinal-linear-coregistration-rsfMRI_new.LayoutXML)
 
-#### 15. Invert Mapping mni2rsfmri – CBSTOOLS - (15_P46_longitudinal-linear-coregistration-invert-mapping-to-rsfMRI.LayoutXML)
+#### 15. Invert Mapping group_avg2rsfmri – CBSTOOLS - (15_P46_longitudinal-linear-coregistration-invert-mapping-to-rsfMRI.LayoutXML)
 
 #### 16. Transform Segmentations to rsfmri space to prepare for nuisance regression – CBSTOOLS - (16_P46_masks2rsfmri_apply_deformations_Layout1.LayoutXML)
 
@@ -40,9 +40,9 @@ WM 45.0 – 49.0
 
 #### 18.-26 fastECM (22_ECM_loop_d0.m) (19_ECM...m, 20_ECM...m, 21_ECM...m, 22_ECM...m)
 
-#### 19. avgqt1mni2group_avg mapping (27_P46_coreg_avgqt1mni2group_avg.LayoutXML)
+#### 19. avgqt1group_avg2mni mapping (27_P46_coreg_avgqt1mni2group_avg.LayoutXML)
 
-#### 20. fastECM2group_avg transform (28_P46_rsfmri2avg_mni_transformation_and_fastECM2group_space_coreg.LayoutXML)
+#### 20. fastECM2mni transform (28_P46_rsfmri2avg_mni_transformation_and_fastECM2group_space_coreg.LayoutXML)
 
 #### 21. Smoothing 
 
