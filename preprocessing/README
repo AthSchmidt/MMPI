@@ -2,7 +2,7 @@
 
 ###### SCRIPTS #######
 
-#### note that all 4 letter subject ID's have been changed to XXXX  and need to be changed back manually - relevant for steps: 3,4,5,6-10,11
+#### note that all 4 letter subject ID's have been changed to XXXX.
 #### note that scripts are mostly separate for each participant - sometimes even for each timepoint -- 
 
 #### 1. Segmentations - CBSTOOLS – whole brain  - ##### 
