@@ -61,7 +61,7 @@ WM 45.0 – 49.0
 
 16_P46_masks2rsfmri_apply_deformations_Layout1.LayoutXML
 
-#### 17. Nuisance Regression – NIPYPE -  
+#### 17. Nuisance Regression – NIPYPE - all relevant scripts for denoising can be found in functions.py 
 
 17_preproc_nuisance_regress_P46.py
 
