@@ -35,13 +35,17 @@ WM 45.0 – 49.0
 
 #### 6-10. Motion Correction + Fieldmap unwarping + Median & TSNR calculations – NIPYPE 
 
-06_ST_Moco_Fmap_Corr_Test_P46_d0.py) (07_ST...py,08_ST...py,09_ST...py,10_ST...py
+06_ST_Moco_Fmap_Corr_Test_P46_d0.py
+07_ST_Moco_Fmap_Corr_Test_P46_d1.py
+08_ST_Moco_Fmap_Corr_Test_P46_d2.py
+09_ST_Moco_Fmap_Corr_Test_P46_d5.py
+10_ST_Moco_Fmap_Corr_Test_P46_d6.py
 
 #### 11. Mappings- CBSTOOLS – RS2QT1 + QT12RS - 
 
 11_P46_contrast-coregistration-rsfMRI-d0-d6.LayoutXML
 
-#### 12. Correct segmentations 1- CBSTOOLS - transfer TSNR image into group_avg space (to multiply with WM mask) - 
+#### 12. Correct segmentations 1- CBSTOOLS - transfer TSNR image into group_avg space (to multiply with WM mask) 
 
 12_P46_background_correction_layout.LayoutXML
 
