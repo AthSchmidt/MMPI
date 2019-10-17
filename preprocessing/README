@@ -65,6 +65,11 @@ WM 45.0 – 49.0
 
 17_preproc_nuisance_regress_P46.py
 
+
+#### 17b. Smoothing 
+
+flsmaths <in_corr_timeseries> -s 2.4 <out_smoothed_timeseries>   
+
 #### 18.-22 fastECM 
 
 18_ECM_loop_d0.m 
@@ -74,14 +79,11 @@ WM 45.0 – 49.0
 22_ECM_loop_d6.m
 
 
-#### 19. avgqt1group_avg2mni mapping 
+#### 23. avgqt1group_avg2mni mapping 
 
-27_P46_coreg_avgqt1mni2group_avg.LayoutXML
+23_P46_coreg_avgqt1mni2group_avg.LayoutXML
 
-#### 20. fastECM2mni transform 
+#### 24. fastECM2mni transform 
 
-28_P46_rsfmri2avg_mni_transformation_and_fastECM2group_space_coreg.LayoutXML)
+24_P46_rsfmri2avg_mni_transformation_and_fastECM2group_space_coreg.LayoutXML)
 
-#### 21. Smoothing 
-
-flsmaths <in> -s 2.4 <out>   
